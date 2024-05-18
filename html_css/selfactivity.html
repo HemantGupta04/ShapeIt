@@ -232,6 +232,28 @@ background: linear-gradient(109.6deg, rgb(253, 199, 141) 11.3%, rgb(249, 143, 25
 </div>
 
 <script>
+    var Activites_5_10_indoor = ["Yoga", "Pilates", "Stretching", "Dance", "Meditation"];
+    var Activites_5_10_outdoor = ["Walking", "Jogging", "Cycling", "Hiking", "Swimming"];
+    var Activites_5_10_unique = ["Rock Climbing", "Kayaking", "Archery", "Ziplining", "Bungee Jumping"];
+    var Activites_5_10_not_decided = ["Yoga", "Pilates", "Stretching", "Dance", "Meditation"];
+
+    var Activities_10_30_indoor = ["Bodyweight Exercises", "High-Intensity Interval Training (HIIT)", "Cooking/Baking", "Reading", "Art/Crafts"];
+    var Activities_10_30_outdoor = ["Gardening", "Photography", "Playing with Pets", "Outdoor Games", "Bird Watching"];
+    var Activities_10_30_unique = ["Geocaching", "Slacklining", "Mini Golf", "Kite Flying", "Urban Exploration"];
+    var Activities_10_30_not_decided = ["Home Workout", "Virtual Tour", "Journaling", "Language Practice", "Puzzle Solving"];
+
+    var Activities_30_60_indoor = ["Strength Training", "Cooking a Full Meal", "Deep Cleaning a Room", "Watching a Documentary", "Learning a New Skill (e.g., playing an instrument)"];
+    var Activities_30_60_outdoor = ["Trail Running", "Long Bike Ride", "Outdoor Yoga", "Tennis or Basketball", "Picnic in the Park"];
+    var Activities_30_60_unique = ["Rock Climbing Session", "Stand-Up Paddleboarding", "Horseback Riding", "Escape Room", "Scuba Diving or Snorkeling"];
+    var Activities_30_60_not_decided = ["Extended Home Workout", "Detailed Virtual Class", "Writing a Short Story", "Learning a New Recipe", "Playing a Board Game"];
+
+
+    var Activities_60_plus_indoor = ["Full Workout Session", "Cooking a Multi-Course Meal", "Deep Cleaning the Entire House", "Watching a Movie or Binge-Watching a Series", "Working on a Large Art/Craft Project"];
+    var Activities_60_plus_outdoor = ["Hiking a Long Trail", "Cycling Trip", "Day at the Beach", "Playing a Sport (e.g., Soccer, Baseball)", "Exploring a New City or Area"];
+    var Activities_60_plus_unique = ["Camping Trip", "Kayaking Expedition", "Rock Climbing Adventure", "Attending a Workshop or Class", "Taking a Scenic Drive"];
+    var Activities_60_plus_not_decided = ["In-Depth Home Improvement Project", "Writing a Chapter of a Book", "Attending a Full-Length Class or Lecture", "Learning a New Language Intensively", "Playing a Strategy Game or RPG"];
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const options = document.querySelectorAll('.option');
 
@@ -268,6 +290,50 @@ document.addEventListener("DOMContentLoaded", function() {
             question1Container.style.display = 'none';
             question2Container.style.display = 'none';
             enterButton.style.display = 'none';
+
+            if (selectedOption1.textContent == "5-10 mins") {
+                if (selectedOption2.textContent == "Indoor Activities") {
+                    messageContainer.querySelector('p').textContent = Activites_5_10_indoor[Math.floor(Math.random() * Activites_5_10_indoor.length)];
+                } else if (selectedOption2.textContent == "Outdoor Activites") {
+                    messageContainer.querySelector('p').textContent = Activites_5_10_outdoor[Math.floor(Math.random() * Activites_5_10_outdoor.length)];
+                } else if (selectedOption2.textContent == "Unique Activities") {
+                    messageContainer.querySelector('p').textContent = Activites_5_10_unique[Math.floor(Math.random() * Activites_5_10_unique.length)];
+                } else if (selectedOption2.textContent == "Not decided yet") {
+                    messageContainer.querySelector('p').textContent = Activites_5_10_not_decided[Math.floor(Math.random() * Activites_5_10_not_decided.length)];
+                }
+            } else if (selectedOption1.textContent == "10-30 mins") {
+                if (selectedOption2.textContent == "Indoor Activities") {
+                    messageContainer.querySelector('p').textContent = Activities_10_30_indoor[Math.floor(Math.random() * Activities_10_30_indoor.length)];
+                } else if (selectedOption2.textContent == "Outdoor Activites") {
+                    messageContainer.querySelector('p').textContent = Activities_10_30_outdoor[Math.floor(Math.random() * Activities_10_30_outdoor.length)];
+                } else if (selectedOption2.textContent == "Unique Activities") {
+                    messageContainer.querySelector('p').textContent = Activities_10_30_unique[Math.floor(Math.random() * Activities_10_30_unique.length)];
+                } else if (selectedOption2.textContent == "Not decided yet") {
+                    messageContainer.querySelector('p').textContent = Activities_10_30_not_decided[Math.floor(Math.random() * Activities_10_30_not_decided.length)];
+                }
+            } else if (selectedOption1.textContent == "30-60 mins") {
+                if (selectedOption2.textContent == "Indoor Activities") {
+                    messageContainer.querySelector('p').textContent = Activities_30_60_indoor[Math.floor(Math.random() * Activities_30_60_indoor.length)];
+                } else if (selectedOption2.textContent == "Outdoor Activites") {
+                    messageContainer.querySelector('p').textContent = Activities_30_60_outdoor[Math.floor(Math.random() * Activities_30_60_outdoor.length)];
+                } else if (selectedOption2.textContent == "Unique Activities") {
+                    messageContainer.querySelector('p').textContent = Activities_30_60_unique[Math.floor(Math.random() * Activities_30_60_unique.length)];
+                } else if (selectedOption2.textContent == "Not decided yet") {
+                    messageContainer.querySelector('p').textContent = Activities_30_60_not_decided[Math.floor(Math.random() * Activities_30_60_not_decided.length)];
+                }
+
+            } else if (selectedOption1.textContent == "60+ mins") {
+
+                if (selectedOption2.textContent == "Indoor Activities") {
+                    messageContainer.querySelector('p').textContent = Activities_60_plus_indoor[Math.floor(Math.random() * Activities_60_plus_indoor.length)];
+                } else if (selectedOption2.textContent == "Outdoor Activites") {
+                    messageContainer.querySelector('p').textContent = Activities_60_plus_outdoor[Math.floor(Math.random() * Activities_60_plus_outdoor.length)];
+                } else if (selectedOption2.textContent == "Unique Activities") {
+                    messageContainer.querySelector('p').textContent = Activities_60_plus_unique[Math.floor(Math.random() * Activities_60_plus_unique.length)];
+                } else if (selectedOption2.textContent == "Not decided yet") {
+                    messageContainer.querySelector('p').textContent = Activities_60_plus_not_decided[Math.floor(Math.random() * Activities_60_plus_not_decided.length)];
+                }
+            }
 
             // Check if Back button already exists
             if (!document.querySelector('.Back')) {
