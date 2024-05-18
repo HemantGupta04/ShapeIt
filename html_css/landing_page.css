@@ -52,7 +52,7 @@ button {
 }
 .nav-links li {
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 .nav-links li a {
   transition: all 0.3s ease 0s;
@@ -65,7 +65,7 @@ button {
   
 }
 button {
-  padding: 50px 25px;
+  padding: 50px 45px;
   background-color: #9ac8cd;
   border:none;
   color: #9ac8cd;
