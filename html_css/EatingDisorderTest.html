@@ -31,7 +31,7 @@
         </div>
     </header>
     
-    <h1 class = "Depression">Eating Disorder Test</h1>
+    <h1 class = "Depression">Stress Test</h1>
     <p class = "paragraph">Answer the following questions with respect to two weeks.</p>
     <div class="container">
         <form id = "form">
@@ -117,20 +117,72 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q9" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 10">
                     <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</p>
                     <div class="options">
-                        <label class="option1">Not difficult at all<input id = "option1" type="radio" name="q10" value="0"></label>
-                        <label class="option2">Somewhat Difficult<input id = "option2" type="radio" name="q10" value="1"></label>
-                        <label class="option3">Very Difficult<input id = "option3" type="radio" name="q10" value="2"></label>
-                        <label class="option4">Extremely Difficult<input id = "option4" type="radio" name="q10" value="3"></label>
+                        <label class="option1">Not at all<input id = "option1" type="radio" name="q10" value="0"></label>
+                        <label class="option2">Several days<input id = "option2" type="radio" name="q10" value="1"></label>
+                        <label class="option3">Most of the days<input id = "option3" type="radio" name="q10" value="2"></label>
+                        <label class="option4">All the time<input id = "option4" type="radio" name="q10" value="3"></label>
                     </div>
                 </div>
+                <!-- make a hidden input field having the value depression test result -->
+                <input type="hidden" name="test" value="Stress Test Result">
+
                 <button type = "submit" class="result-btn">View Results</button>
             </div>
         </form>
     </div>
     <script src = "script.js">
     </script>
+
+<script>
+
+         
+var questions = [
+  "I have found myself getting upset by quite trivial things",
+  "I have experienced breathing difficulties",
+  "I have tended to overreact to situations",
+  "I have felt shakey – like my legs are going to give way",
+  "I have found myself getting upset easily",
+  "I have found myself getting impatient when I have been delayed in any way",
+  "I have experienced sweaty palms or perspiration for no physical reasons",
+  "I have felt scared or nervous for no good reason",
+  "I haven't been aware of my heart rate, even when I am not exercising",
+  "I have been very irritable",
+  "I have been close to panic",
+  "I have found it hard to calm down after something has upset me",
+  "It has been difficult for me to tolerate interruptions to what I was doing",
+  "I have had a sense of nervous tension – like being on edge all the time"
+];
+
+
+     // now randomly select 10 questions
+
+     var selectedQuestions = [];
+     while(selectedQuestions.length < 10){
+         var randomIndex = Math.floor(Math.random() * questions.length);
+         if(selectedQuestions.indexOf(questions[randomIndex]) === -1){
+             selectedQuestions.push(questions[randomIndex]);
+         }
+     }
+
+     // add Numbering to the questions eg: 1. Question 1, 2. Question 2, ...
+     selectedQuestions = selectedQuestions.map((question, index) => {
+         return `${index + 1}. ${question}`;
+     });
+
+     console.log(selectedQuestions)
+     // replace the questions in the paragraph element with classes 1, 2, 3, ...
+     var questionElements = document.querySelectorAll('.question');
+     questionElements.forEach((questionElement, index) => {
+         questionElement.querySelector('p').textContent = selectedQuestions[index];
+     });
+
+     
+
+
+
+</script>
 </body>
 </html>

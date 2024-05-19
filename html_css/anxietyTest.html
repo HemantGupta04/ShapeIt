@@ -120,17 +120,60 @@
                 <div class="question">
                     <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</p>
                     <div class="options">
-                        <label class="option1">Not difficult at all<input id = "option1" type="radio" name="q10" value="0"></label>
-                        <label class="option2">Somewhat Difficult<input id = "option2" type="radio" name="q10" value="1"></label>
-                        <label class="option3">Very Difficult<input id = "option3" type="radio" name="q10" value="2"></label>
-                        <label class="option4">Extremely Difficult<input id = "option4" type="radio" name="q10" value="3"></label>
+                        <label class="option1">Not at all<input id = "option1" type="radio" name="q10" value="0"></label>
+                        <label class="option2">Several days<input id = "option2" type="radio" name="q10" value="1"></label>
+                        <label class="option3">Most of the days<input id = "option3" type="radio" name="q10" value="2"></label>
+                        <label class="option4">All the time<input id = "option4" type="radio" name="q10" value="3"></label>
                     </div>
                 </div>
+                <input type="hidden" name="test" value="Anxiety Test Result">
                 <button type = "submit" class="result-btn">View Results</button>
             </div>
         </form>
     </div>
     <script src = "script.js">
+    </script>
+
+    <script>
+    var questions = [
+  "I find it very hard to unwind, relax or sit still",
+  "I have had stomach problems, such as feeling sick or stomach cramps",
+  "I have been irritable and easily become annoyed",
+  "I have experienced shortness of breath",
+  "I have felt dizzy and unsteady at times",
+  "I have felt panicked and overwhelmed by things in my life",
+  "I have felt nervous and on edge",
+  "I have had trembling hands",
+  "I seem to be constantly worrying about things",
+  "I have had difficulties with sleep (including waking early, finding it hard to go to sleep)"
+];
+
+
+        // now randomly select 10 questions
+
+        var selectedQuestions = [];
+        while(selectedQuestions.length < 10){
+            var randomIndex = Math.floor(Math.random() * questions.length);
+            if(selectedQuestions.indexOf(questions[randomIndex]) === -1){
+                selectedQuestions.push(questions[randomIndex]);
+            }
+        }
+
+        // add Numbering to the questions eg: 1. Question 1, 2. Question 2, ...
+        selectedQuestions = selectedQuestions.map((question, index) => {
+            return `${index + 1}. ${question}`;
+        });
+
+        console.log(selectedQuestions)
+        // replace the questions in the paragraph element with classes 1, 2, 3, ...
+        var questionElements = document.querySelectorAll('.question');
+        questionElements.forEach((questionElement, index) => {
+            questionElement.querySelector('p').textContent = selectedQuestions[index];
+        });
+
+        
+
+
     </script>
 </body>
 </html>

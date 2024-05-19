@@ -117,20 +117,69 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q9" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 10">
                     <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</p>
                     <div class="options">
-                        <label class="option1">Not difficult at all<input id = "option1" type="radio" name="q10" value="0"></label>
-                        <label class="option2">Somewhat Difficult<input id = "option2" type="radio" name="q10" value="1"></label>
-                        <label class="option3">Very Difficult<input id = "option3" type="radio" name="q10" value="2"></label>
-                        <label class="option4">Extremely Difficult<input id = "option4" type="radio" name="q10" value="3"></label>
+                        <label class="option1">Not at all<input id = "option1" type="radio" name="q10" value="0"></label>
+                        <label class="option2">Several days<input id = "option2" type="radio" name="q10" value="1"></label>
+                        <label class="option3">Most of the days<input id = "option3" type="radio" name="q10" value="2"></label>
+                        <label class="option4">All the time<input id = "option4" type="radio" name="q10" value="3"></label>
                     </div>
                 </div>
+                <!-- make a hidden input field having the value depression test result -->
+                <input type="hidden" name="test" value="ADHD Test Result">
+
                 <button type = "submit" class="result-btn">View Results</button>
             </div>
         </form>
     </div>
     <script src = "script.js">
     </script>
+
+<script>
+
+         
+var questions = [
+  "I find it difficult finishing a task or project",
+  "I find it difficult to organise myself or a task",
+  "I find it difficult to remember appointments",
+  "If a task or project requires a lot of thought I will often delay in getting it started",
+  "I find it difficult to sit still and often fidget or squirm",
+  "I find it hard to remain focused in group settings",
+  "My mind feels very cluttered and it is hard for me to concentrate on one thing at a time",
+  "I make decisions quickly and fail to think through the consequences",
+  "I am often irritable, with a short fuse",
+  "I have mood swings, sometimes feeling quite high, other times low",
+  "I often miss what is being said to me in conversations"
+];
+
+
+     // now randomly select 10 questions
+
+     var selectedQuestions = [];
+     while(selectedQuestions.length < 10){
+         var randomIndex = Math.floor(Math.random() * questions.length);
+         if(selectedQuestions.indexOf(questions[randomIndex]) === -1){
+             selectedQuestions.push(questions[randomIndex]);
+         }
+     }
+
+     // add Numbering to the questions eg: 1. Question 1, 2. Question 2, ...
+     selectedQuestions = selectedQuestions.map((question, index) => {
+         return `${index + 1}. ${question}`;
+     });
+
+     console.log(selectedQuestions)
+     // replace the questions in the paragraph element with classes 1, 2, 3, ...
+     var questionElements = document.querySelectorAll('.question');
+     questionElements.forEach((questionElement, index) => {
+         questionElement.querySelector('p').textContent = selectedQuestions[index];
+     });
+
+     
+
+
+
+</script>
 </body>
 </html>

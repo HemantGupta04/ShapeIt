@@ -117,20 +117,69 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q9" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 10">
                     <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</p>
                     <div class="options">
-                        <label class="option1">Not difficult at all<input id = "option1" type="radio" name="q10" value="0"></label>
-                        <label class="option2">Somewhat Difficult<input id = "option2" type="radio" name="q10" value="1"></label>
-                        <label class="option3">Very Difficult<input id = "option3" type="radio" name="q10" value="2"></label>
-                        <label class="option4">Extremely Difficult<input id = "option4" type="radio" name="q10" value="3"></label>
+                        <label class="option1">Not at all<input id = "option1" type="radio" name="q10" value="0"></label>
+                        <label class="option2">Several days<input id = "option2" type="radio" name="q10" value="1"></label>
+                        <label class="option3">Most of the days<input id = "option3" type="radio" name="q10" value="2"></label>
+                        <label class="option4">All the time<input id = "option4" type="radio" name="q10" value="3"></label>
                     </div>
                 </div>
+                <!-- make a hidden input field having the value depression test result -->
+                <input type="hidden" name="test" value="Addiction Test Result">
+
                 <button type = "submit" class="result-btn">View Results</button>
             </div>
         </form>
     </div>
     <script src = "script.js">
     </script>
+
+<script>
+
+         
+var questions = [
+  "Do you often feel a strong urge or desire to engage in a particular behavior or use a specific substance?",
+  "Have you found that you often consume more of a substance or engage in a behavior for longer periods than you initially intended?",
+  "Do you experience withdrawal symptoms when you do not use the substance or engage in the behavior, or do you use the substance to relieve or avoid these symptoms?",
+  "Have you lost interest in hobbies, activities, or social interactions that you once enjoyed because of your substance use or behavior?",
+  "Have you noticed that you need to use more of the substance or engage in the behavior more frequently to achieve the same effect as before?",
+  "Do you continue to use the substance or engage in the behavior even though it is causing physical or mental health issues?",
+  "Has your substance use or behavior led to financial problems or excessive spending?",
+  "Have you had arguments or conflicts with friends, family members, or colleagues because of your substance use or behavior?",
+  "Do you hide your substance use or behavior from others, or feel embarrassed about it?",
+  "Have you missed important appointments, meetings, or deadlines due to your substance use or behavior?"
+];
+
+
+     // now randomly select 10 questions
+
+     var selectedQuestions = [];
+     while(selectedQuestions.length < 10){
+         var randomIndex = Math.floor(Math.random() * questions.length);
+         if(selectedQuestions.indexOf(questions[randomIndex]) === -1){
+             selectedQuestions.push(questions[randomIndex]);
+         }
+     }
+
+     // add Numbering to the questions eg: 1. Question 1, 2. Question 2, ...
+     selectedQuestions = selectedQuestions.map((question, index) => {
+         return `${index + 1}. ${question}`;
+     });
+
+     console.log(selectedQuestions)
+     // replace the questions in the paragraph element with classes 1, 2, 3, ...
+     var questionElements = document.querySelectorAll('.question');
+     questionElements.forEach((questionElement, index) => {
+         questionElement.querySelector('p').textContent = selectedQuestions[index];
+     });
+
+     
+
+
+
+</script>
 </body>
 </html>
+

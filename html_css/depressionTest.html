@@ -7,35 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logowithtext">
-            <img class="logo" src="Co-working Space.png" alt="logo">
-    
-        </div>
-        <h1 class="shape">Shapeit</h1>
-        <nav>
-            <ul class="nav-links">
-    
-                <li><a href="about.html">About</a></li>
-                <li><a href="landing_page.html">Home</a></li>
-                <li><a href="https://indianhelpline.com">Helpline</a></li>
-                <li><a href="Test.html">Tests</a></li>
-                <li><a href="resource.html">Resources</a></li>
-                <li><a href="Consult.html">Consult</a> </a></li>
-    
-            </ul>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Mental Health Logo" class="logo-img">
+          
+        <nav class="navbar">
+            <a href="landing_page.html" style="--i:1;" class="active">Home</a>
+            <a href="about.html" style="--i:2;">About</a>
+            <a href="Test.html" style="--i:3;">Test</a>
+            <a href="resource.html" style="--i:4;">Resources</a>
+            <a href="Consult.html" style="--i:4;">Consult</a>
+            <a href="https://discord.gg/nqmRTAxu" style="--i:5;">Community</a>
+            <a href="https://indianhelpline.com" style="--i:6;">Helpline</a>
+            <a href="signup.html" style="--i:6;">Login</a>
+           
+           
     
         </nav>
-        <div class="logindiv">
-            <a class="cta" href="signup.html"><button>Login</button></a>
-        </div>
-    </header>
-    <h1 class = "Depression">PTSD Test</h1>
+</header>
+    
+    <h1 class = "Depression">Depression Test</h1>
     <p class = "paragraph">Answer the following questions with respect to two weeks.</p>
     <div class="container">
         <form id = "form">
             <div class = "d-flex">
-                <div class="question">
+                <div class="question 1">
                     <p>1. Little interest or pleasure in doing things</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q1" value="0"></label>
@@ -44,7 +40,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q1" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 2">
                     <p>2. Feeling down, depressed, or hopeless</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q2" value="0"></label>
@@ -53,7 +49,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q2" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 3">
                     <p>3. Trouble falling or staying asleep, or sleeping too much</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q3" value="0"></label>
@@ -62,7 +58,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q3" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 4">
                     <p>4. Feeling tired or having little energy</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q4" value="0"></label>
@@ -71,7 +67,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q4" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 5">
                     <p>5. Poor appetite or overeating</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q5" value="0"></label>
@@ -80,7 +76,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q5" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 6">
                     <p>6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q6" value="0"></label>
@@ -89,7 +85,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q6" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 7">
                     <p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q7" value="0"></label>
@@ -98,7 +94,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q7" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 8">
                     <p>8. Moving or speaking so slowly that other people could have noticed</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q8" value="0"></label>
@@ -107,7 +103,7 @@
                         <label class="option4">All the time<input id = "option4" type="radio" name="q8" value="3"></label>
                     </div>
                 </div>
-                <div class="question">
+                <div class="question 9">
                     <p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
                     <div class="options">
                         <label class="option1">Not at all<input id = "option1" type="radio" name="q9" value="0"></label>
@@ -126,64 +122,64 @@
                     </div>
                 </div>
                 <!-- make a hidden input field having the value depression test result -->
-                <input type="hidden" name="test" value="PTSD Test Result">
-
+                <input type="hidden" name="test" value="Depression Test Result">
                 <button type = "submit" class="result-btn">View Results</button>
             </div>
         </form>
     </div>
     <script src = "script.js">
-    </script>
-    
+          </script>
 
-    <script>
+          <script>
 
-   
-var questions = [
-  "Any reminder brought back feelings about the event/s",
-  "I had trouble staying asleep",
-  "Other things kept making me think about it",
-  "I felt irritable and angry",
-  "Letting myself get upset when I thought about it or was reminded of it",
-  "I thought about the event when I didn't mean to",
-  "I felt as if the event hadn't happened or it wasn't real",
-  "I have stayed away from reminders about the situation",
-  "Images and pictures of the event pop into my mind",
-  "I have been jumpy and easily startled",
-  "I have tried not to think about the situation",
-  "I am aware I have a lot of feelings about what happened but I haven’t dealt with them",
-  "I feel quite ‘numb’ about the situation",
-  "I have found myself acting / feeling like I am back at the time of the event",
-  "I have had trouble falling asleep"
+         
+       var questions = [
+  "No Interest or pleasure in doing things",
+  "Feeling down, depressed, or hopeless",
+  "Trouble falling or staying asleep, or sleeping too much",
+  "Feeling tired or having little energy",
+  "Poor appetite or overeating",
+  "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+  "Trouble concentrating on things, such as reading the newspaper or watching television",
+  "Moving or speaking so slowly that other people could have noticed",
+  "Thoughts that you would be better off dead, or of hurting yourself",
+  "If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?",
+  "The bad things in my life aren’t all my fault",
+  "I am often on the brink of tears or cry",
+  "I feel irritated and annoyed by things in my life",
+  "I think I am unattractive or ugly",
+  "My sleep patterns have been really disrupted"
 ];
 
+        // now randomly select 10 questions
 
-  // now randomly select 10 questions
+        var selectedQuestions = [];
+        while(selectedQuestions.length < 10){
+            var randomIndex = Math.floor(Math.random() * questions.length);
+            if(selectedQuestions.indexOf(questions[randomIndex]) === -1){
+                selectedQuestions.push(questions[randomIndex]);
+            }
+        }
 
-  var selectedQuestions = [];
-  while(selectedQuestions.length < 10){
-      var randomIndex = Math.floor(Math.random() * questions.length);
-      if(selectedQuestions.indexOf(questions[randomIndex]) === -1){
-          selectedQuestions.push(questions[randomIndex]);
-      }
-  }
+        // add Numbering to the questions eg: 1. Question 1, 2. Question 2, ...
+        selectedQuestions = selectedQuestions.map((question, index) => {
+            return `${index + 1}. ${question}`;
+        });
 
-  // add Numbering to the questions eg: 1. Question 1, 2. Question 2, ...
-  selectedQuestions = selectedQuestions.map((question, index) => {
-      return `${index + 1}. ${question}`;
-  });
+        console.log(selectedQuestions)
+        // replace the questions in the paragraph element with classes 1, 2, 3, ...
+        var questionElements = document.querySelectorAll('.question');
+        questionElements.forEach((questionElement, index) => {
+            questionElement.querySelector('p').textContent = selectedQuestions[index];
+        });
 
-  console.log(selectedQuestions)
-  // replace the questions in the paragraph element with classes 1, 2, 3, ...
-  var questionElements = document.querySelectorAll('.question');
-  questionElements.forEach((questionElement, index) => {
-      questionElement.querySelector('p').textContent = selectedQuestions[index];
-  });
-
-  
-
+        
 
 
-</script>
+
+   </script>
 </body>
 </html>
+
+
+
