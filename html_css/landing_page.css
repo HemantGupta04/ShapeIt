@@ -721,11 +721,11 @@ button[aria-selected="true"] {
 }
 .sharestory-form form input,
 form textarea {
-  border: none;
+  border: 10px #0B2447;
   outline: none;
   width: 90%;
   padding: 18px;
-  background: #3a7fc4;
+  background: #C5DFF8;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
@@ -740,7 +740,7 @@ form textarea {
 .sharestory-form form .Send {
   display: inline-block;
   padding: 14px 60px;
-  background-color: #1d5d9b;
+  background-color: #0B2447;
   border-radius: 40px;
   font-size: 18px;
   color: #ffffff;
