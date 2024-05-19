@@ -12,6 +12,7 @@ body {
   background: #ffffff;
 }
 .shape {
+  color:white;
   font-size: 30px;
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
@@ -23,7 +24,7 @@ body {
 header {
   box-sizing: border-box;
   margin: 0;
-  background-color: #1e0342;
+  background-color: #1E0342;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +37,7 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #9ac8cd;
+  color: #41C9E2;
   text-decoration: none;
 }
 
@@ -58,17 +59,17 @@ button {
   transition: all 0.3s ease 0s;
 }
 .nav-links li a:hover {
-  color: #0088a9;
+  color: #008DDA;
 }
 .logindiv {
-  color: #9ac8cd;
+  color: #41C9E2;
   
 }
 button {
   padding: 50px 45px;
-  background-color: #9ac8cd;
+  background-color: #41C9E2;
   border:none;
-  color: #9ac8cd;
+  color: #41C9E2;
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -81,8 +82,9 @@ button:hover {
 
 
   .Home {
-    background-color:#e2ffff;
-    position: relative;
+    
+    background-color:#9AC8CD;
+    /* position: relative; */
     width: 100%;
     justify-content: space-between;
     height: 90vh;
@@ -91,10 +93,17 @@ button:hover {
     display: flex;
     align-items: center;
     padding: 20px 10% 0;
-    margin-top: -150px;
+    margin-top: 0px;
+  }
+  .consultimage{
+    position:relative;
+    margin-top:50px;
+    margin-left:140%;
+    height: 340px;
+    width:500px;
   }
   .Home-content {
-  
+    /* display:flex; */
     margin-top:0%;
     max-width: 600px;
     color: #000;
@@ -117,7 +126,7 @@ button:hover {
   }
   
   .Home-content h1 span {
-    color: #1D5D9B;
+    color: #1E0342;
   }
   
   .Home-content h2 {
@@ -139,9 +148,11 @@ button:hover {
     font-weight: 700;
     color: #ffffff;
     margin-top: 20px;
-    background-color: #1D5D9B;
+    
+    background-color: #1E0342;
     padding: 5px 15px;
     border-radius: 0%;
+    
   }
   
   

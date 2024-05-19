@@ -418,6 +418,8 @@ button:hover {
   }
    
   .image-container {
+    height:400px;
+    width:600px;
     float: right;
     margin-left: 20px; /* Adjust margin as needed */
     margin-bottom: 10px; /* Reduce the bottom margin */
