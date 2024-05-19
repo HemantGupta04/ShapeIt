@@ -1,4 +1,7 @@
 /* General CSS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +10,8 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  color: #ffffff;
-  background: #ffffff;
+  color: #C2D9FF;
+  background: #C2D9FF;
 }
 h1 {
     text-align: center;
@@ -20,6 +23,7 @@ p{
 }
 
 .shape {
+  color:white;
   font-size: 30px;
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
@@ -89,7 +93,7 @@ button:hover {
     max-width: 700px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(85, 123, 134, 0.5);
+    background-color: #8E8FFA;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -156,26 +160,26 @@ button:hover {
     transition: background-color 0.3s;
 }
 .option1:hover {
-    background: #ffeb3b ;
+    background: #525CEB ;
 }
 .option1 input[type="radio"] {
     display: none;
 }
 
 .option1.selected {
-    background-color: #ffeb3b; /* Yellow */
+    background-color: #525CEB; /* Yellow */
 }
 
 .option2.selected {
-    background-color: #ffdd00; /* Blue */
+    background-color: #525CEB; /* Blue */
 }
 
 .option3.selected {
-    background-color: #ffbf00; /* Green */
+    background-color: #525CEB; /* Green */
 }
 
 .option4.selected {
-    background-color: #ff9100; /* Pink */
+    background-color: #525CEB; /* Pink */
 }
 
 
@@ -191,7 +195,7 @@ button:hover {
     transition: background-color 0.3s;
 }
 .option2:hover {
-    background: #ffdd00 ;
+    background: #525CEB ;
 }
 .option2 input[type="radio"] {
     display: none;
@@ -209,7 +213,7 @@ button:hover {
     transition: background-color 0.3s;
 }
 .option3:hover {
-    background: #ffbf00 ;
+    background: #525CEB ;
 }
 .option3 input[type="radio"] {
     display: none;
@@ -229,7 +233,7 @@ button:hover {
     transition: background-color 0.3s;
 }
 .option4:hover {
-    background: #ff9100 ;
+    background: #525CEB ;
 }
 .option4 input[type="radio"] {
     display: none;
@@ -242,7 +246,7 @@ button:hover {
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: #4caf50;
+    background-color: #1B1A55;
     color: #fff;
     font-size: 16px;
     border: none;
@@ -252,10 +256,12 @@ button:hover {
 }
 
 .result-btn:hover {
-    background-color: #43a047;
+    background-color: #525CEB;
 }
 
 
+
+  
 
   
 .buttons1 {
