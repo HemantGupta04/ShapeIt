@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,500;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -111,6 +112,7 @@ button:hover {
   }
   
   .Home-content h1 {
+    font-family: "Anton", sans-serif;
     font-size: 50px;
     font-weight: 700;
     color: #000;
@@ -121,21 +123,25 @@ button:hover {
   }
   
   .Home-content h1:nth-of-type(2) {
+    font-family: "Anton", sans-serif;
     margin-bottom: 30px;
     color: #000;
   }
   
   .Home-content h1 span {
-    color: #1E0342;
+    font-family: "Anton", sans-serif;
+    color: #138fe1;
   }
   
   .Home-content h2 {
+    font-family: "Anton", sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #000;
     white-space: nowrap;
   }
   .Home-content h3 {
+    font-family: "Anton", sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #000;
@@ -144,6 +150,7 @@ button:hover {
   }
   
   .Home-content h4 {
+    font-family: "Anton", sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: #ffffff;
@@ -389,4 +396,9 @@ button:hover {
 
 .bg-custom-color {
   background-color: #1D5D9B;
+}
+
+
+.date-pick h5{
+  margin-top: 250px;
 }

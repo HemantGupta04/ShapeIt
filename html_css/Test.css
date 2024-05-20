@@ -10,7 +10,7 @@
 }
 body {
   color: #ffffff;
-  background: #ffffff;
+  background: #caf0f8;
 }
 .shape {
   font-size: 30px;
@@ -457,7 +457,7 @@ button:hover {
   }
   
   .btn1:hover {
-    background-color: #001a31;
+    background-color: #005f73;
   }
   
   
@@ -476,7 +476,7 @@ button:hover {
   }
   
   .btn:hover {
-    background-color: #190482;
+    background-color: #005f73;
   }
   section{
     display: flex;
@@ -487,3 +487,41 @@ button:hover {
   .test-button{
    justify-content: center;
   }
+  .Test-text h1{
+    color: #0e2366;
+   
+  }
+
+  .Test-text h2{
+    color: #457b9d;
+  }
+
+  .Test-text b{
+    color: #138fe1
+  }
+
+  .btn{
+    background-color: #18a4ab;
+  }
+
+.background-box{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.btn1{
+  background-color: #18a4ab;
+  padding: 15px;
+  
+}
+
+.Test3-text a
+{
+  color: #0e0e6c;
+}
+
+.background-box1
+{
+  border-radius: 30px 30px 30px 30px;
+}

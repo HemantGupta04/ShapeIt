@@ -836,3 +836,20 @@ section {
   font-size: 60px;
   justify-content: center;
 }
+
+
+.Home-content h3{
+  font-family: emoji;
+}
+
+.Home-content p{
+  font-family: emoji;
+}
+
+.Home-content h1{
+  font-family: emoji;
+}
+
+.Home-content h3 span{
+  color: deepskyblue;
+}
