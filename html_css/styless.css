@@ -231,11 +231,16 @@ a,
     background: transparent;
     border: 2px solid red;
     cursor: pointer;
+    opacity: 100%;
 }
 
 
 .card:hover .intro{
     right:0;
+    background: rgba(31, 61, 71, 0.9); /* More opaque on hover */
+  opacity: 1;
+      
+    
 }
 .sub-title span{
     color: red;  

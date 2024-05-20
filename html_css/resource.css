@@ -23,7 +23,7 @@ body {
 header {
   box-sizing: border-box;
   margin: 0;
-  background-color: #1e0342;
+  background-color: #138fe1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #9ac8cd;
+  color: white;
   text-decoration: none;
 }
 
@@ -58,23 +58,23 @@ button {
   transition: all 0.3s ease 0s;
 }
 .nav-links li a:hover {
-  color: #0088a9;
+  color: greenyellow;
 }
 .logindiv {
-  color: #9ac8cd;
+  color: white;
   
 }
 button {
   padding: 50px 45px;
   /* background-color: #9ac8cd; */
   border:none;
-  color: #9ac8cd;
+  color: white;
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: greenyellow ;
 }
 
   body {
