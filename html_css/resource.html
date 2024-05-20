@@ -5,170 +5,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Health</title>
-    <link rel="stylesheet" href="resource.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resource.css">
     
     <link rel="stylesheet" href="nav_bar.css">
 
 </head>
 <body>
 
-
-
-<header>
-    <div class="logowithtext">
-        <img class="logo" src="Co-working Space.png" alt="logo">
-
-    </div>
-    <h1 class="shape">Shapeit</h1>
-    <nav>
-        <ul class="nav-links">
-
-            <li><a href="about.html">About</a></li>
-            <li><a href="landing_page.html">Home</a></li>
-            <li><a href="https://indianhelpline.com">Helpline</a></li>
-            <li><a href="Test.html">Tests</a></li>
-            <li><a href="resource.html">Resources</a></li>
-            <li><a href="Consult.html">Consult</a> </a></li>
-
-        </ul>
-
-    </nav>
-    <div class="logindiv">
-        <a class="cta" href="signup.html"><button>Login</button></a>
-    </div>
-</header>
-
-
-
-
-<div class="grid grid-cols-1 gap-4">
-    <a href="index.html" class="block">
-        <div class="flex flex-col items-center custom-bg-color border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mt-40 mb-5 mx-auto card">
-            <img class="object-cover w-72 md:w-96 rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="movies1.png" alt="">
-            <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MOVIES</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lights, camera, healing – Let these movies be your companion on the journey to wellness.</p>
-            </div>
-        </div>
-    </a>
-</div>
-
-
+    <header>
+        <div class="logowithtext">
+            <img class="logo" src="Co-working Space.png" alt="logo">
     
-<!-- Second card -->
-<div class="grid grid-cols-1 gap-4">
-    <a href="games.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="games3.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">GAMES</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Escape into a world of healing – Dive into games designed for your mental well-being.</p>
         </div>
+        <h1 class="shape">Shapeit</h1>
+        <nav>
+            <ul class="nav-links">
+    
+                <li><a href="about.html">About</a></li>
+                <li><a href="landing_page.html">Home</a></li>
+                <li><a href="https://indianhelpline.com">Helpline</a></li>
+                <li><a href="Test.html">Tests</a></li>
+                <li><a href="resource.html">Resources</a></li>
+                <li><a href="Consult.html">Consult</a> </a></li>
+    
+            </ul>
+    
+        </nav>
+        <div class="logindiv">
+            <a class="cta" href="signup.html"><button>Login</button></a>
+        </div>
+    </header>
+    
+
+<section class = "container">
+<!-- FIRST CARD HOVER -->
+<div class = "card">
+    <img src = "/ShapeIt/images/movies.jpeg" class = "card-img" alt = "MOVIES">
+    <div class = "card-body">
+        <h1 class = "card-title">MOVIES</h1>
+        <p class = "card-info">Lights, camera, healing – Let these movies be your companion on the journey to wellness.</p>
+
+        <button class="card-btn" onclick="window.location.href='index.html'">BINGE   !</button>
+    </div>
+    
+
+</div>
+
+<!-- second card hover -->
+<div class = "card">
+    <img src = "/ShapeIt/images/games.jpg" class = "card-img" alt = "GAMES">
+    <div class = "card-body">
+        <h1 class = "card-title">GAMES</h1>
+        <p class = "card-info">Escape into a world of healing – Dive into games designed for your mental well-being.</p>
+
+        <button class="card-btn" onclick="window.location.href='games.html'">GAME ON !</button>
+    </div>
+    
+
+</div>
+
+<!-- THIRD CARD HOVER  -->
+<div class = "card">
+    <img src = "/ShapeIt/images/music.jpeg" class = "card-img" alt = "MUSIC">
+    <div class = "card-body">
+        <h1 class = "card-title">MUSIC</h1>
+        <p class = "card-info">Lyrics that heal, beats that uplift – Tune in to the soundtrack of your recovery.</p>
+
+        <button class="card-btn" onclick="window.location.href='music.html'">LISTEN !</button>
+    </div>
+    
+
+</div>
+
+<!-- THIRD CARD HOVER  -->
+<div class = "card">
+    <img src = "/ShapeIt/images/meditation-room.png" class = "card-img" alt = "MEDITATION">
+    <div class = "card-body">
+        <h1 class = "card-title">MEDITATION-ROOM</h1>
+        <p class = "card-info">Lyrics that heal, beats that uplift – Tune in to the soundtrack of your recovery.</p>
+
+        <button class="card-btn" onclick="window.location.href='meditation.html'">MEDITATE !</button>
+    </div>
+    
+
+</div>
+
+<!-- FIFTH CARD HOVER  -->
+<div class = "card">
+    <img src = "/ShapeIt/images/quote.jpg" class = "card-img" alt = "QUOTES">
+    <div class = "card-body">
+        <h1 class = "card-title">AFFIRMATIONS</h1>
+        <p class = "card-info">Welcome to your sanctuary of self-love – Where affirmations pave the path to healing.</p>
+
+        <button class="card-btn" onclick="window.location.href='quote.html'">MOTIVATE !</button>
     </div>
 </div>
 
-<!-- Third card -->
-<div class="grid grid-cols-1 gap-4">
-    <a href="music.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="songspic.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MUSIC</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lyrics that heal, beats that uplift – Tune in to the soundtrack of your recovery.</p>
-        </div>
-    </div>
-</div> 
+<!-- SIXTHCARD HOVER  -->
+<div class = "card">
+    <img src = "/ShapeIt/images/story-time.png" class = "card-img" alt = "STORIES">
+    <div class = "card-body">
+        <h1 class = "card-title">STORIES</h1>
+        <p class = "card-info">Narratives of hope, chapters of healing – Let these stories inspire your own.</p>
 
-<div class="grid grid-cols-1 gap-4">
-    <a href="meditation.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700  mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="physical.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MEDITATION ROOM</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Find peace in the chaos; meditate, and let your soul be the calm in the storm.</p>
-        </div>
+        <button class="card-btn" onclick="window.location.href='storiesMain.html'">READ !</button>
     </div>
 </div>
 
-<!-- fourth card -->
+<!-- SEVENTH CARD HOVER  -->
+<div class = "card">
+    <img src = "/ShapeIt/images/self-care-resources.jpg" class = "card-img" alt = "SELF-CARE">
+    <div class = "card-body">
+        <h1 class = "card-title">SELF CARE</h1>
+        <p class = "card-info">Self-care is not selfish – It's essential. Dive in and prioritize your well-being.</p>
 
-    <div class="grid grid-cols-1 gap-4" style="overflow: hidden;">
-    <a href="quote.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="affirm.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AFFIRMATIONS</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Welcome to your sanctuary of self-love – Where affirmations pave the path to healing.</p>
-        </div>
-    </div>
-</div> 
-<!-- Fifth card -->
-<div class="grid grid-cols-1 gap-4" style="overflow: hidden;">
-    <a href="storiesMain.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700  mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="resource2.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">STORIES</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Narratives of hope, chapters of healing – Let these stories inspire your own.</p>
-        </div>
-    </div>
-</div>
-<!-- 6th card -->
-<div class="grid grid-cols-1 gap-4" style="overflow: hidden;">
-    <a href="yt.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700  mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="selfcare.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SELF CARE</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Self-care is not selfish – It's essential. Dive in and prioritize your well-being.</p>
-        </div>
+        <button class="card-btn" onclick="window.location.href='yt.html'">SELF-CARE !</button>
     </div>
 </div>
 
-<!-- 7th card -->
+<div class = "card">
+    <img src = "/ShapeIt/images/physical-activity-adults.png" class = "card-img" alt = "QUOTES">
+    <div class = "card-body">
+        <h1 class = "card-title">PHYSICAL ACTIVITIES</h1>
+        <p class = "card-info">Sweat out stress, embrace serenity – Let physical activity be your therapy.</p>
 
-<div class="grid grid-cols-1 gap-4" style="overflow: hidden;">
-    <a href="notepad.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700  mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="notepadpic.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">NOTEPAD</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Open your notepad, open your mind – A canvas for your thoughts, feelings, and reflections.</p>
-        </div>
+        <button class="card-btn" onclick="window.location.href='selfactivity.html'">PLAY !</button>
     </div>
 </div>
-
-<!-- 8th card -->
-<div class="grid grid-cols-1 gap-4" style="overflow: hidden;">
-    <a href="sharethoughts.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700  mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="talkk.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SHARE YOUR THOUGHTS</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Your thoughts are valuable, your experiences are valid – Share them here.</p>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- 9th card -->
-<div class="grid grid-cols-1 gap-4" style="overflow: hidden;">
-    <a href="selfactivity.html" class="block">
-    <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-4xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-10 mx-auto card">
-        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-64 md:rounded-none md:rounded-s-lg" src="physical.png" alt="">
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">PHYSICAL ACTIVITIES</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sweat out stress, embrace serenity – Let physical activity be your therapy.</p>
-        </div>
-    </div>
-</div>
-
-<!-- 10th card -->
-
+</section>
 
 </body>
 </html>
