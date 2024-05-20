@@ -99,6 +99,15 @@ button:hover {
       background-size: cover;
       padding-bottom: -50%;
   }
+  .abs-section2 {
+      position: relative;
+      height: 70vh;
+      background-image: url("../images/hero-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: -50%;
+  }
   .abs-title {
       /* font-family: cursive, sans-serif; */
       font-family: 'Luckiest Guy',sans-serif;
@@ -124,12 +133,35 @@ button:hover {
       text-align: justify;
 
   }
+  .abs-section2 p {
+      color: #463664;
+      margin-right: 10%;
+      margin-left: 10%;
+      /* font-family: Roboto, sans-serif; */
+      font-size: 20px;
+      padding: 6px;
+      /* margin-bottom: 32px; */
+      text-align: justify;
+
+  }
   .abs-section p span a {
+      text-decoration: none;
+      color: #FF9D2E;
+  }
+  .abs-section2 p span a {
       text-decoration: none;
       color: #FF9D2E;
   }
   @media screen and (max-width: 1000px) {
       .abs-section {
+          height: auto;
+          /* padding: 80px 16px 0; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+      .abs-section2 {
           height: auto;
           /* padding: 80px 16px 0; */
           display: flex;
@@ -155,10 +187,21 @@ button:hover {
           margin: 0;
           padding: 0;
       }
+      .abs-section2 p {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+      }
       .abs-section p:not(:last-child) {
           margin-bottom: 24px;
       }
+      .abs-section2 p:not(:last-child) {
+          margin-bottom: 24px;
+      }
       .abs-section p:last-child {
+          padding-bottom: 40px;
+      }
+      .abs-section2 p:last-child {
           padding-bottom: 40px;
       }
   }
