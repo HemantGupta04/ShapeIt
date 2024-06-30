@@ -32,12 +32,12 @@ cd shareit
 
 ## Getting Started
 
-To get started with ShareIt:
+To get started with ShapeIt:
 
-1. Sign up for an account on ShareIt.
-2. Upload your files or create a new folder.
-3. Invite collaborators by sharing the link or sending invitations via email.
-4. Start collaborating in real-time!
+1. Sign up for an account on ShapeIt.
+2. Take a test and understand youself.<br>
+3. As per the test watch recommended movies.
+4. Start collaborating in real-time and take advice!
 
 ## Security
 
