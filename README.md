@@ -1,12 +1,12 @@
-# ShareIt
+# ShapeIt
 
-Welcome to ShareIt, your platform for seamless file sharing and collaboration.
+Welcome to ShapeIt, your platform for seamless mental health assessment and support.
 
 ## Features
 
-- 🔒 **Secure File Sharing**: Share files securely with colleagues, friends, or clients.
-- 🔄 **Real-time Collaboration**: Collaborate on documents in real-time.
-- 📝 **Version History**: Keep track of document versions and changes.
+- 🔒 **Secure Assessments**: Take mental health assessments securely.
+- 🔄 **Real-time Results**: Receive immediate feedback and results.
+- 📊 **Insightful Reports**: Get detailed reports to understand your mental health.
 - 🖥️ **User-Friendly Interface**: Intuitive interface for easy navigation and usage.
 
 ## Tech Stack
@@ -21,9 +21,13 @@ ShareIt is built using:
 To install and run ShareIt locally:
 
 1. Clone the repository:<br>
-git clone https://github.com//shait.git](https://github.com/HemantGupta04/ShapeIt
+ ```sh
+   git clone https://github.com/HemantGupta04/ShapeIt.git
+```
 2. Navigate into the project directory:<br>
+ ```sh
 cd shareit
+ ```
 3. Open `index.html` in your web browser to start using ShareIt.
 
 ## Getting Started
